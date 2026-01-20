@@ -1,0 +1,3248 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mersin Web Tasarim | Mersin SEO Hizmetleri | Abshell Yazilim</title>
+  <meta name="description" content="Mersin web tasarim ve Mersin SEO hizmetlerinde lider. Profesyonel kurumsal web sitesi, e-ticaret cozumleri, arama motoru optimizasyonu (SEO) ve dijital pazarlama. Mersin'de guvenilir yazilim partneri.">
+  <meta name="keywords" content="Mersin web tasarim, Mersin SEO, Mersin web sitesi, Mersin e-ticaret, Mersin dijital pazarlama, Mersin yazilim, kurumsal web sitesi Mersin, SEO hizmetleri Mersin, web tasarim firmasi Mersin">
+  <meta name="author" content="Abshell Yazilim">
+  <meta name="robots" content="index, follow">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="tr_TR">
+  <meta property="og:url" content="https://abshellyazilim.com">
+  <meta property="og:site_name" content="Abshell Yazilim">
+  <meta property="og:title" content="Mersin Web Tasarim | Mersin SEO | Abshell Yazilim">
+  <meta property="og:description" content="Mersin'de profesyonel web tasarim ve SEO hizmetleri. E-ticaret, kurumsal web sitesi ve dijital pazarlama cozumleri.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Mersin Web Tasarim | Mersin SEO | Abshell Yazilim">
+  <meta name="twitter:description" content="Mersin'de profesyonel web tasarim ve SEO hizmetleri. E-ticaret, kurumsal web sitesi ve dijital pazarlama cozumleri.">
+  <meta name="theme-color" content="#0a0a0a">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --background: #0d0f14;
+      --foreground: #fafafa;
+      --card: #14171f;
+      --card-foreground: #fafafa;
+      --primary: #22d3ee;
+      --primary-foreground: #fafafa;
+      --secondary: #1c1f28;
+      --secondary-foreground: #fafafa;
+      --muted: #1c1f28;
+      --muted-foreground: #a1a1aa;
+      --border: #2a2d38;
+      --radius: 1rem;
+    }
+    
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    html {
+      scroll-behavior: smooth;
+    }
+    
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      background-color: var(--background);
+      color: var(--foreground);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+    
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    
+    /* Utility Classes */
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+    
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 0.75rem 1.5rem;
+      font-size: 0.875rem;
+      font-weight: 500;
+      border-radius: var(--radius);
+      cursor: pointer;
+      transition: all 0.2s ease;
+      border: none;
+    }
+    
+    .btn-primary {
+      background: var(--primary);
+      color: var(--background);
+    }
+    
+    .btn-primary:hover {
+      background: #06b6d4;
+      box-shadow: 0 10px 40px rgba(34, 211, 238, 0.3);
+    }
+    
+    .btn-outline {
+      background: transparent;
+      border: 1px solid var(--border);
+      color: var(--foreground);
+    }
+    
+    .btn-outline:hover {
+      border-color: var(--primary);
+      background: rgba(34, 211, 238, 0.1);
+    }
+    
+    .gradient-text {
+      background: linear-gradient(to right, var(--primary), var(--foreground));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 1rem;
+      font-size: 0.875rem;
+      color: var(--primary);
+      background: rgba(34, 211, 238, 0.1);
+      border: 1px solid rgba(34, 211, 238, 0.3);
+      border-radius: 9999px;
+    }
+    
+    .section-title {
+      font-size: 2.25rem;
+      font-weight: 700;
+      line-height: 1.2;
+      text-wrap: balance;
+    }
+    
+    @media (min-width: 768px) {
+      .section-title {
+        font-size: 3rem;
+      }
+    }
+    
+    /* Header */
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 50;
+      background: rgba(13, 15, 20, 0.8);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+    
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 0;
+    }
+    
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+    
+    .logo span {
+      color: var(--primary);
+    }
+    
+    .nav-desktop {
+      display: none;
+      gap: 2.5rem;
+    }
+    
+    @media (min-width: 1024px) {
+      .nav-desktop {
+        display: flex;
+      }
+    }
+    
+    .nav-link {
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: var(--muted-foreground);
+      transition: color 0.2s;
+    }
+    
+    .nav-link:hover {
+      color: var(--foreground);
+    }
+    
+    .header-actions {
+      display: none;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    
+    @media (min-width: 1024px) {
+      .header-actions {
+        display: flex;
+      }
+    }
+    
+    .mobile-menu-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 2.5rem;
+      height: 2.5rem;
+      background: transparent;
+      border: none;
+      color: var(--foreground);
+      cursor: pointer;
+    }
+    
+    @media (min-width: 1024px) {
+      .mobile-menu-btn {
+        display: none;
+      }
+    }
+    
+    .mobile-menu {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 100;
+      background: var(--background);
+      padding: 1.5rem;
+    }
+    
+    .mobile-menu.active {
+      display: block;
+    }
+    
+    .mobile-menu-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 2rem;
+    }
+    
+    .mobile-nav-link {
+      display: block;
+      padding: 0.75rem 0;
+      font-size: 1.125rem;
+      font-weight: 500;
+      color: var(--muted-foreground);
+      border-bottom: 1px solid var(--border);
+    }
+    
+    /* Hero Section */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-top: 5rem;
+      overflow: hidden;
+    }
+    
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom right, rgba(34, 211, 238, 0.1), var(--background), var(--background));
+    }
+    
+    .hero-orb {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(80px);
+      animation: pulse 4s ease-in-out infinite;
+    }
+    
+    .hero-orb-1 {
+      top: 25%;
+      left: 25%;
+      width: 24rem;
+      height: 24rem;
+      background: rgba(34, 211, 238, 0.2);
+    }
+    
+    .hero-orb-2 {
+      bottom: 25%;
+      right: 25%;
+      width: 20rem;
+      height: 20rem;
+      background: rgba(34, 211, 238, 0.1);
+      animation-delay: 1s;
+    }
+    
+    .hero-grid {
+      position: absolute;
+      inset: 0;
+      background-image: 
+        linear-gradient(to right, rgba(255,255,255,0.03) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255,255,255,0.03) 1px, transparent 1px);
+      background-size: 4rem 4rem;
+    }
+    
+    .hero-content {
+      position: relative;
+      text-align: center;
+      max-width: 56rem;
+      padding: 6rem 1.5rem;
+    }
+    
+    .hero h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      line-height: 1.1;
+      margin-bottom: 2rem;
+    }
+    
+    @media (min-width: 640px) {
+      .hero h1 {
+        font-size: 3.75rem;
+      }
+    }
+    
+    @media (min-width: 1024px) {
+      .hero h1 {
+        font-size: 4.5rem;
+      }
+    }
+    
+    .hero-description {
+      font-size: 1.125rem;
+      color: var(--muted-foreground);
+      max-width: 42rem;
+      margin: 0 auto 3rem;
+      line-height: 1.8;
+    }
+    
+    .hero-description strong {
+      color: var(--foreground);
+    }
+    
+    .hero-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      justify-content: center;
+      margin-bottom: 4rem;
+    }
+    
+    @media (min-width: 640px) {
+      .hero-buttons {
+        flex-direction: row;
+      }
+    }
+    
+    .hero-buttons .btn {
+      padding: 1rem 2rem;
+      font-size: 1rem;
+    }
+    
+    .trust-indicators {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem 2rem;
+      font-size: 0.875rem;
+      color: var(--muted-foreground);
+    }
+    
+    .trust-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    
+    .trust-dot {
+      width: 0.5rem;
+      height: 0.5rem;
+      background: #22c55e;
+      border-radius: 50%;
+      animation: pulse 2s ease-in-out infinite;
+    }
+    
+    /* Stats Section */
+    .stats {
+      position: relative;
+      padding: 4rem 0;
+    }
+    
+    .stats::before,
+    .stats::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: linear-gradient(to right, transparent, rgba(34, 211, 238, 0.5), transparent);
+    }
+    
+    .stats::before { top: 0; }
+    .stats::after { bottom: 0; }
+    
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+    }
+    
+    @media (min-width: 1024px) {
+      .stats-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+    
+    .stat-item {
+      text-align: center;
+    }
+    
+    .stat-value {
+      font-size: 3rem;
+      font-weight: 700;
+      background: linear-gradient(to right, var(--primary), var(--foreground));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    
+    @media (min-width: 640px) {
+      .stat-value {
+        font-size: 4rem;
+      }
+    }
+    
+    .stat-label {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-top: 0.5rem;
+    }
+    
+    .stat-description {
+      font-size: 0.875rem;
+      color: var(--muted-foreground);
+    }
+    
+    /* Services Section */
+    .services {
+      position: relative;
+      padding: 6rem 0;
+    }
+    
+    .services-bg {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom, var(--background), rgba(28, 31, 40, 0.2), var(--background));
+    }
+    
+    .services-header {
+      text-align: center;
+      max-width: 42rem;
+      margin: 0 auto 4rem;
+    }
+    
+    .services-header p {
+      margin-top: 1.5rem;
+      font-size: 1.125rem;
+      color: var(--muted-foreground);
+    }
+    
+    .services-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+    
+    @media (min-width: 1024px) {
+      .services-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+    
+    .service-card {
+      position: relative;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 2rem;
+      transition: all 0.3s ease;
+    }
+    
+    .service-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(34, 211, 238, 0.3);
+    }
+    
+    .service-card.highlight {
+      background: linear-gradient(to bottom right, rgba(34, 211, 238, 0.2), var(--card), var(--card));
+      border: 2px solid rgba(34, 211, 238, 0.3);
+      box-shadow: 0 20px 40px rgba(34, 211, 238, 0.1);
+    }
+    
+    .service-badge {
+      position: absolute;
+      top: -0.75rem;
+      left: 1.5rem;
+      padding: 0.25rem 0.75rem;
+      font-size: 0.75rem;
+      font-weight: 500;
+      background: var(--primary);
+      color: var(--background);
+      border-radius: 9999px;
+    }
+    
+    .service-icon {
+      width: 3.5rem;
+      height: 3.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--secondary);
+      border-radius: 0.75rem;
+      margin-bottom: 1.5rem;
+      transition: transform 0.3s;
+    }
+    
+    .service-card:hover .service-icon {
+      transform: scale(1.1);
+    }
+    
+    .service-card.highlight .service-icon {
+      background: rgba(34, 211, 238, 0.2);
+    }
+    
+    .service-icon svg {
+      width: 1.75rem;
+      height: 1.75rem;
+      color: var(--foreground);
+    }
+    
+    .service-card.highlight .service-icon svg {
+      color: var(--primary);
+    }
+    
+    .service-card h3 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+    }
+    
+    .service-card p {
+      color: var(--muted-foreground);
+      line-height: 1.7;
+    }
+    
+    /* SEO Detail Section */
+    .seo-detail {
+      position: relative;
+      padding: 6rem 0;
+      overflow: hidden;
+    }
+    
+    .seo-bg-gradient {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom, var(--background), rgba(34, 211, 238, 0.03), var(--background));
+    }
+    
+    .seo-orb-left {
+      position: absolute;
+      top: 25%;
+      left: 0;
+      width: 24rem;
+      height: 24rem;
+      background: rgba(34, 211, 238, 0.05);
+      border-radius: 50%;
+      filter: blur(80px);
+    }
+    
+    .seo-orb-right {
+      position: absolute;
+      bottom: 25%;
+      right: 0;
+      width: 24rem;
+      height: 24rem;
+      background: rgba(56, 189, 248, 0.05);
+      border-radius: 50%;
+      filter: blur(80px);
+    }
+    
+    .seo-header {
+      text-align: center;
+      max-width: 56rem;
+      margin: 0 auto 4rem;
+    }
+    
+    .seo-intro {
+      font-size: 1.125rem;
+      color: var(--muted-foreground);
+      line-height: 1.7;
+      margin-top: 1.5rem;
+    }
+    
+    .seo-experience-banner {
+      position: relative;
+      padding: 2.5rem;
+      border-radius: 1.5rem;
+      background: linear-gradient(135deg, rgba(34, 211, 238, 0.1), rgba(56, 189, 248, 0.1));
+      border: 1px solid rgba(34, 211, 238, 0.2);
+      text-align: center;
+      margin-bottom: 4rem;
+      overflow: hidden;
+    }
+    
+    .experience-glow {
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at center, rgba(34, 211, 238, 0.1), transparent 70%);
+    }
+    
+    .experience-label {
+      position: relative;
+      color: var(--muted-foreground);
+      margin-bottom: 1rem;
+    }
+    
+    .experience-stats {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+    
+    @media (min-width: 640px) {
+      .experience-stats {
+        flex-direction: row;
+        justify-content: center;
+        gap: 2rem;
+      }
+    }
+    
+    .experience-number {
+      font-size: 3rem;
+      font-weight: 700;
+      color: var(--primary);
+    }
+    
+    @media (min-width: 640px) {
+      .experience-number {
+        font-size: 3.75rem;
+      }
+    }
+    
+    .experience-text {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: var(--foreground);
+    }
+    
+    @media (min-width: 640px) {
+      .experience-text {
+        font-size: 1.875rem;
+      }
+    }
+    
+    .experience-desc {
+      position: relative;
+      color: var(--muted-foreground);
+      max-width: 42rem;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+    
+    .seo-cities {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      margin-bottom: 4rem;
+    }
+    
+    .seo-city-card {
+      position: relative;
+      padding: 2rem;
+      border-radius: 1.5rem;
+      transition: all 0.5s ease;
+    }
+    
+    .seo-city-card:hover {
+      transform: scale(1.01);
+      box-shadow: 0 25px 50px -12px rgba(34, 211, 238, 0.1);
+    }
+    
+    .seo-city-card.mersin {
+      background: linear-gradient(135deg, rgba(34, 211, 238, 0.1), rgba(59, 130, 246, 0.1));
+      border: 1px solid rgba(34, 211, 238, 0.3);
+    }
+    
+    .seo-city-card.adana {
+      background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(20, 184, 166, 0.1));
+      border: 1px solid rgba(16, 185, 129, 0.3);
+    }
+    
+    .seo-city-card.antalya {
+      background: linear-gradient(135deg, rgba(249, 115, 22, 0.1), rgba(245, 158, 11, 0.1));
+      border: 1px solid rgba(249, 115, 22, 0.3);
+    }
+    
+    .city-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+    
+    @media (min-width: 1024px) {
+      .city-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    
+    .city-header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+    
+    .city-icon {
+      padding: 0.75rem;
+      border-radius: 1rem;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .city-icon svg {
+      color: var(--primary);
+    }
+    
+    .city-header h3 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--foreground);
+    }
+    
+    .city-subtitle {
+      font-size: 0.875rem;
+      color: var(--primary);
+      font-weight: 500;
+    }
+    
+    .city-desc {
+      color: var(--muted-foreground);
+      line-height: 1.7;
+      margin-bottom: 1.5rem;
+    }
+    
+    .city-highlight {
+      padding: 1rem;
+      border-radius: 0.75rem;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+    
+    .city-highlight p {
+      font-size: 0.875rem;
+      color: var(--foreground);
+      font-weight: 500;
+      font-style: italic;
+    }
+    
+    .city-points h4 {
+      font-size: 1.125rem;
+      font-weight: 600;
+      color: var(--foreground);
+      margin-bottom: 1rem;
+    }
+    
+    .city-points ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+    
+    .city-points li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      color: var(--muted-foreground);
+    }
+    
+    .city-points li svg {
+      color: var(--primary);
+      flex-shrink: 0;
+      margin-top: 0.125rem;
+    }
+    
+    .seo-why-different {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    
+    .seo-why-different h3 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--foreground);
+      margin-bottom: 1rem;
+    }
+    
+    @media (min-width: 640px) {
+      .seo-why-different h3 {
+        font-size: 1.875rem;
+      }
+    }
+    
+    .why-intro {
+      color: var(--muted-foreground);
+      margin-bottom: 2rem;
+    }
+    
+    .why-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+    
+    @media (min-width: 640px) {
+      .why-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    
+    @media (min-width: 1024px) {
+      .why-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+    
+    .why-item {
+      padding: 1.5rem;
+      border-radius: 1rem;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+    
+    .why-item:hover {
+      border-color: rgba(34, 211, 238, 0.5);
+      transform: translateY(-0.25rem);
+    }
+    
+    .why-icon {
+      display: inline-flex;
+      padding: 0.75rem;
+      border-radius: 0.75rem;
+      background: rgba(34, 211, 238, 0.1);
+      margin-bottom: 1rem;
+    }
+    
+    .why-icon svg {
+      color: var(--primary);
+    }
+    
+    .why-item p {
+      font-size: 0.875rem;
+      color: var(--muted-foreground);
+    }
+    
+    .seo-tech-note {
+      text-align: center;
+      padding: 2rem;
+      border-radius: 1.5rem;
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.03), rgba(34, 211, 238, 0.05));
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      margin-bottom: 4rem;
+    }
+    
+    .tech-main {
+      font-size: 1.125rem;
+      font-weight: 500;
+      color: var(--foreground);
+      margin-bottom: 0.5rem;
+    }
+    
+    .tech-sub {
+      color: var(--muted-foreground);
+    }
+    
+    .tech-highlight {
+      color: var(--primary);
+      font-weight: 600;
+    }
+    
+    .seo-cta {
+      text-align: center;
+    }
+    
+    .seo-cta > p {
+      font-size: 1.125rem;
+      color: var(--muted-foreground);
+      max-width: 48rem;
+      margin: 0 auto 1rem;
+    }
+    
+    .cta-highlight {
+      color: var(--foreground) !important;
+      font-weight: 500;
+      margin-bottom: 1.5rem !important;
+    }
+    
+    /* About Section */
+    .about {
+      position: relative;
+      padding: 6rem 0;
+      overflow: hidden;
+    }
+    
+    .about-bg {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom right, rgba(28, 31, 40, 0.5), var(--background), var(--background));
+    }
+    
+    .about-orb {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 50%;
+      height: 50%;
+      background: rgba(34, 211, 238, 0.05);
+      border-radius: 50%;
+      filter: blur(80px);
+    }
+    
+    .about-grid {
+      position: relative;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+    
+    @media (min-width: 1024px) {
+      .about-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    
+    .about-content p {
+      margin-top: 1.5rem;
+      font-size: 1.125rem;
+      color: var(--muted-foreground);
+      line-height: 1.8;
+    }
+    
+    .about-content strong {
+      color: var(--foreground);
+    }
+    
+    .features-list {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+      margin-top: 2.5rem;
+    }
+    
+    @media (min-width: 640px) {
+      .features-list {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    
+    .feature-item {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    
+    .feature-icon {
+      width: 2rem;
+      height: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(34, 211, 238, 0.1);
+      border-radius: 0.5rem;
+      flex-shrink: 0;
+    }
+    
+    .feature-icon svg {
+      width: 1.25rem;
+      height: 1.25rem;
+      color: var(--primary);
+    }
+    
+    .feature-item span {
+      font-size: 0.875rem;
+      font-weight: 500;
+    }
+    
+    .about-stats {
+      position: relative;
+      background: linear-gradient(to bottom right, var(--card), var(--card), rgba(28, 31, 40, 0.5));
+      border: 1px solid var(--border);
+      border-radius: 1.5rem;
+      padding: 2.5rem;
+      box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+    }
+    
+    .about-stats-orb {
+      position: absolute;
+      top: -1rem;
+      right: -1rem;
+      width: 6rem;
+      height: 6rem;
+      background: rgba(34, 211, 238, 0.2);
+      border-radius: 50%;
+      filter: blur(40px);
+    }
+    
+    .about-stats-main {
+      font-size: 5rem;
+      font-weight: 700;
+      background: linear-gradient(to right, var(--primary), var(--foreground));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      line-height: 1;
+    }
+    
+    .about-stats-label {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-top: 0.5rem;
+    }
+    
+    .about-stats-description {
+      margin-top: 1rem;
+      font-size: 1.125rem;
+      color: var(--muted-foreground);
+      line-height: 1.7;
+    }
+    
+    .about-stats-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+      margin-top: 2.5rem;
+    }
+    
+    .about-stat-card {
+      background: rgba(28, 31, 40, 0.8);
+      border: 1px solid rgba(42, 45, 56, 0.5);
+      border-radius: 1rem;
+      padding: 1.5rem;
+    }
+    
+    .about-stat-card .value {
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+    
+    .about-stat-card .label {
+      font-size: 0.875rem;
+      color: var(--muted-foreground);
+      margin-top: 0.25rem;
+    }
+    
+    /* Why Us Section */
+    .why-us {
+      position: relative;
+      padding: 6rem 0;
+      overflow: hidden;
+    }
+    
+    .why-us-bg {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(28, 31, 40, 0.3), var(--background), var(--background));
+    }
+    
+    .why-us-orb {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 50rem;
+      height: 25rem;
+      background: rgba(34, 211, 238, 0.05);
+      border-radius: 50%;
+      filter: blur(80px);
+    }
+    
+    .why-us-header {
+      text-align: center;
+      max-width: 42rem;
+      margin: 0 auto 4rem;
+    }
+    
+    .why-us-header p {
+      margin-top: 1.5rem;
+      font-size: 1.125rem;
+      color: var(--muted-foreground);
+    }
+    
+    .why-us-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+    
+    @media (min-width: 1024px) {
+      .why-us-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+    
+    .reason-card {
+      background: rgba(20, 23, 31, 0.5);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 2rem;
+      backdrop-filter: blur(8px);
+      transition: all 0.3s ease;
+    }
+    
+    .reason-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(34, 211, 238, 0.3);
+      background: var(--card);
+    }
+    
+    .reason-icon {
+      width: 3.5rem;
+      height: 3.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(to bottom right, rgba(34, 211, 238, 0.2), var(--secondary));
+      border-radius: 0.75rem;
+      margin-bottom: 1.5rem;
+      transition: all 0.3s;
+    }
+    
+    .reason-card:hover .reason-icon {
+      background: linear-gradient(to bottom right, rgba(34, 211, 238, 0.3), var(--secondary));
+    }
+    
+    .reason-icon svg {
+      width: 1.75rem;
+      height: 1.75rem;
+      color: var(--primary);
+    }
+    
+    .reason-card h3 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+    }
+    
+    .reason-card p {
+      color: var(--muted-foreground);
+      line-height: 1.7;
+    }
+    
+    /* Contact Section */
+    .contact {
+      position: relative;
+      padding: 6rem 0;
+      overflow: hidden;
+    }
+    
+    .contact-bg {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom right, rgba(28, 31, 40, 0.5), var(--background), var(--background));
+    }
+    
+    .contact-orb {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 24rem;
+      height: 24rem;
+      background: rgba(34, 211, 238, 0.05);
+      border-radius: 50%;
+      filter: blur(80px);
+    }
+    
+    .contact-header {
+      text-align: center;
+      max-width: 42rem;
+      margin: 0 auto 4rem;
+    }
+    
+    .contact-header p {
+      margin-top: 1.5rem;
+      font-size: 1.125rem;
+      color: var(--muted-foreground);
+    }
+    
+    .contact-header strong {
+      color: var(--foreground);
+    }
+    
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      max-width: 56rem;
+      margin: 0 auto;
+    }
+    
+    @media (min-width: 768px) {
+      .contact-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+    
+    .contact-card {
+      background: rgba(20, 23, 31, 0.5);
+      border: 1px solid var(--border);
+      border-radius: 1.5rem;
+      padding: 2rem;
+      text-align: center;
+      backdrop-filter: blur(8px);
+      transition: all 0.3s ease;
+    }
+    
+    .contact-card:hover {
+      border-color: rgba(34, 211, 238, 0.5);
+    }
+    
+    .contact-icon {
+      width: 4rem;
+      height: 4rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(34, 211, 238, 0.1);
+      border-radius: 1rem;
+      margin: 0 auto 1.5rem;
+      transition: background 0.3s;
+    }
+    
+    .contact-card:hover .contact-icon {
+      background: rgba(34, 211, 238, 0.2);
+    }
+    
+    .contact-icon svg {
+      width: 2rem;
+      height: 2rem;
+      color: var(--primary);
+    }
+    
+    .contact-card h3 {
+      font-size: 1.125rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+    
+    .contact-card p,
+    .contact-card a {
+      color: var(--muted-foreground);
+      transition: color 0.2s;
+    }
+    
+    .contact-card a:hover {
+      color: var(--primary);
+    }
+    
+    .contact-card .subtext {
+      font-size: 0.875rem;
+      margin-top: 0.25rem;
+    }
+    
+    .whatsapp-cta {
+      text-align: center;
+      margin-top: 3rem;
+    }
+    
+    .whatsapp-card {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+      background: rgba(20, 23, 31, 0.5);
+      border: 1px solid var(--border);
+      border-radius: 1.5rem;
+      padding: 2rem;
+      backdrop-filter: blur(8px);
+    }
+    
+    @media (min-width: 640px) {
+      .whatsapp-card {
+        flex-direction: row;
+      }
+    }
+    
+    .whatsapp-icon {
+      width: 4rem;
+      height: 4rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(34, 197, 94, 0.2);
+      border-radius: 1rem;
+    }
+    
+    .whatsapp-icon svg {
+      width: 2rem;
+      height: 2rem;
+      color: #22c55e;
+    }
+    
+    .whatsapp-content {
+      text-align: center;
+    }
+    
+    @media (min-width: 640px) {
+      .whatsapp-content {
+        text-align: left;
+      }
+    }
+    
+    .whatsapp-content h3 {
+      font-size: 1.125rem;
+      font-weight: 600;
+    }
+    
+    .whatsapp-content p {
+      font-size: 0.875rem;
+      color: var(--muted-foreground);
+    }
+    
+    .btn-whatsapp {
+      background: #22c55e;
+      color: white;
+    }
+    
+    .btn-whatsapp:hover {
+      background: #16a34a;
+    }
+    
+    /* Footer - New Design */
+    .footer-new {
+      position: relative;
+      overflow: hidden;
+      background: linear-gradient(135deg, #0a1628 0%, #0d1f3c 50%, #0a1628 100%);
+      border-top-left-radius: 2rem;
+      border-top-right-radius: 2rem;
+      padding: 3rem 0;
+      opacity: 0;
+      transform: translateY(2rem);
+      animation: footerFadeIn 1s ease forwards;
+    }
+    
+    @keyframes footerFadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    .footer-noise {
+      position: absolute;
+      inset: 0;
+      opacity: 0.03;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+    }
+    
+    .footer-new-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2.5rem;
+    }
+    
+    @media (min-width: 768px) {
+      .footer-new-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+      }
+    }
+    
+    .footer-new-col {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    
+    .footer-brand-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #ffffff;
+      letter-spacing: -0.025em;
+      transition: all 0.3s ease;
+      cursor: default;
+    }
+    
+    .footer-brand-title:hover {
+      color: #4da8da;
+      text-shadow: 0 0 8px rgba(77, 168, 218, 0.5);
+    }
+    
+    .footer-text {
+      font-size: 0.875rem;
+      line-height: 1.7;
+      color: #9ca3af;
+    }
+    
+    .footer-label {
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: #ffffff;
+    }
+    
+    .footer-register {
+      font-size: 0.875rem;
+      color: #9ca3af;
+      margin-top: 0.25rem;
+      font-family: monospace;
+    }
+    
+    /* Mini Trust Badge */
+    .footer-trust-badge {
+      margin-top: 3rem;
+      padding: 1.5rem 0;
+      border-top: 1px solid #1a2a4a;
+      border-bottom: 1px solid #1a2a4a;
+      text-align: center;
+      animation: fadeInUp 1s ease forwards;
+      animation-delay: 0.3s;
+      opacity: 0;
+    }
+    
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(1rem);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    .trust-title {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: #6b8cae;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+    }
+    
+    .trust-subtitle {
+      font-size: 0.75rem;
+      letter-spacing: 0.05em;
+      color: #5a7a9a;
+    }
+    
+    .trust-register {
+      font-size: 0.75rem;
+      color: #5a7a9a;
+      font-family: monospace;
+      margin-top: 0.5rem;
+    }
+    
+    /* SEO Trust Statement */
+    .footer-seo-statement {
+      margin-top: 2rem;
+      max-width: 48rem;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    .footer-seo-statement p {
+      font-size: 0.75rem;
+      text-align: center;
+      color: #6b7280;
+      line-height: 1.7;
+    }
+    
+    /* Infrastructure Note */
+    .footer-infra-note {
+      margin-top: 1rem;
+      text-align: center;
+    }
+    
+    .footer-infra-note p {
+      font-size: 0.75rem;
+      font-style: italic;
+      font-weight: 300;
+      color: #4b5563;
+    }
+    
+    /* Legal Expand */
+    .footer-legal-expand {
+      margin-top: 2rem;
+      text-align: center;
+    }
+    
+    .legal-trigger {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.75rem;
+      color: #9ca3af;
+      cursor: pointer;
+      transition: color 0.3s ease;
+    }
+    
+    .legal-trigger:hover {
+      color: #d1d5db;
+    }
+    
+    .legal-arrow {
+      font-size: 0.625rem;
+      transition: transform 0.3s ease;
+    }
+    
+    .legal-arrow.expanded {
+      transform: rotate(180deg);
+    }
+    
+    .legal-content {
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+      transition: all 0.5s ease;
+    }
+    
+    .legal-content.expanded {
+      max-height: 10rem;
+      opacity: 1;
+      margin-top: 1rem;
+    }
+    
+    .legal-content p {
+      font-size: 0.75rem;
+      color: #6b7280;
+      line-height: 1.7;
+      max-width: 40rem;
+      margin: 0 auto;
+    }
+    
+    /* Bottom Line */
+    .footer-bottom-line {
+      margin-top: 2.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid #1a2a4a;
+      text-align: center;
+    }
+    
+    .footer-bottom-line .copyright {
+      font-size: 0.875rem;
+      color: #d1d5db;
+    }
+    
+    .footer-bottom-line .tagline {
+      font-size: 0.625rem;
+      color: #4b5563;
+      margin-top: 0.5rem;
+    }
+    
+    /* Chatbot */
+    .chatbot-btn {
+      position: fixed;
+      bottom: 1.5rem;
+      right: 1.5rem;
+      z-index: 40;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 0.5rem 1.25rem 0.5rem 0.5rem;
+      background: var(--card);
+      border: 2px solid rgba(34, 211, 238, 0.3);
+      border-radius: 9999px;
+      cursor: pointer;
+      box-shadow: 0 10px 40px rgba(34, 211, 238, 0.2);
+      transition: all 0.3s ease;
+    }
+    
+    .chatbot-btn:hover {
+      transform: scale(1.05);
+      border-color: rgba(34, 211, 238, 0.5);
+      box-shadow: 0 15px 50px rgba(34, 211, 238, 0.3);
+    }
+    
+    .chatbot-btn.hidden {
+      display: none;
+    }
+    
+    .chatbot-btn span {
+      font-size: 0.875rem;
+      font-weight: 500;
+    }
+    
+    .chatbot-btn .online-dot {
+      position: absolute;
+      top: -0.25rem;
+      right: -0.25rem;
+      width: 0.75rem;
+      height: 0.75rem;
+      background: #22c55e;
+      border: 2px solid var(--card);
+      border-radius: 50%;
+      animation: pulse 2s ease-in-out infinite;
+    }
+    
+    /* Robot Avatar */
+    .robot-avatar {
+      position: relative;
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+    
+    .robot-avatar.large {
+      width: 4rem;
+      height: 4rem;
+    }
+    
+    .robot-glow {
+      position: absolute;
+      inset: 0;
+      background: rgba(34, 211, 238, 0.3);
+      border-radius: 1rem;
+      filter: blur(15px);
+      animation: pulse 2s ease-in-out infinite;
+    }
+    
+    .robot-head {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom right, var(--secondary), var(--card), var(--secondary));
+      border-radius: 1rem;
+      border: 2px solid rgba(34, 211, 238, 0.4);
+      overflow: hidden;
+    }
+    
+    .robot-antenna {
+      position: absolute;
+      top: -0.5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .antenna-ball {
+      width: 0.5rem;
+      height: 0.5rem;
+      background: var(--primary);
+      border-radius: 50%;
+      animation: bounce 1s ease-in-out infinite;
+    }
+    
+    .antenna-stick {
+      width: 2px;
+      height: 0.5rem;
+      background: rgba(34, 211, 238, 0.6);
+    }
+    
+    .robot-face {
+      position: absolute;
+      inset: 0.25rem;
+      background: rgba(13, 15, 20, 0.8);
+      border-radius: 0.75rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .robot-eyes {
+      display: flex;
+      gap: 0.5rem;
+    }
+    
+    .robot-eye {
+      width: 0.5rem;
+      height: 0.625rem;
+      background: var(--primary);
+      border-radius: 50%;
+      position: relative;
+      animation: blink 3s ease-in-out infinite;
+    }
+    
+    .robot-avatar.large .robot-eye {
+      width: 0.625rem;
+      height: 0.75rem;
+    }
+    
+    .robot-eye::before {
+      content: '';
+      position: absolute;
+      top: 2px;
+      left: 2px;
+      width: 4px;
+      height: 4px;
+      background: rgba(255, 255, 255, 0.8);
+      border-radius: 50%;
+    }
+    
+    .robot-mouth {
+      position: absolute;
+      bottom: 0.375rem;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 1rem;
+      height: 0.25rem;
+      background: rgba(34, 211, 238, 0.6);
+      border-radius: 9999px;
+      animation: smile 2s ease-in-out infinite;
+    }
+    
+    .robot-side-light {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 4px;
+      height: 0.75rem;
+      background: #22c55e;
+      border-radius: 9999px;
+      animation: pulse 2s ease-in-out infinite;
+    }
+    
+    .robot-side-light.left { left: 2px; }
+    .robot-side-light.right { right: 2px; animation-delay: 0.5s; }
+    
+    .robot-particles {
+      position: absolute;
+    }
+    
+    .robot-particle {
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      background: rgba(34, 211, 238, 0.6);
+      border-radius: 50%;
+      animation: float 2s ease-in-out infinite;
+    }
+    
+    .robot-particle:nth-child(1) { top: -4px; right: -4px; }
+    .robot-particle:nth-child(2) { bottom: -4px; left: -4px; animation-delay: 0.5s; width: 4px; height: 4px; }
+    .robot-particle:nth-child(3) { top: 50%; right: -8px; animation-delay: 1s; width: 4px; height: 4px; }
+    
+    /* Chatbot Panel */
+    .chatbot-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 50;
+      background: rgba(0, 0, 0, 0.2);
+      backdrop-filter: blur(4px);
+    }
+    
+    .chatbot-overlay.active {
+      display: block;
+    }
+    
+    .chatbot-panel {
+      position: fixed;
+      z-index: 50;
+      background: var(--card);
+      border: 1px solid var(--border);
+      box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+      transform: translateX(100%);
+      opacity: 0;
+      transition: all 0.3s ease;
+      inset: 0;
+    }
+    
+    @media (min-width: 1024px) {
+      .chatbot-panel {
+        top: 1rem;
+        bottom: 1rem;
+        right: 1rem;
+        left: auto;
+        width: 26rem;
+        border-radius: 1rem;
+      }
+    }
+    
+    .chatbot-panel.active {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    
+    .chatbot-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem;
+      border-bottom: 1px solid var(--border);
+      background: linear-gradient(to right, rgba(28, 31, 40, 0.8), rgba(28, 31, 40, 0.4));
+    }
+    
+    .chatbot-header-info {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    
+    .chatbot-header h3 {
+      font-size: 1.125rem;
+      font-weight: 600;
+    }
+    
+    .chatbot-status {
+      display: flex;
+      align-items: center;
+      gap: 0.375rem;
+      font-size: 0.75rem;
+      color: #22c55e;
+    }
+    
+    .chatbot-status .dot {
+      width: 0.5rem;
+      height: 0.5rem;
+      background: #22c55e;
+      border-radius: 50%;
+      animation: pulse 2s ease-in-out infinite;
+    }
+    
+    .chatbot-header-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    
+    .chatbot-header-btn {
+      width: 2rem;
+      height: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: transparent;
+      border: none;
+      color: var(--muted-foreground);
+      cursor: pointer;
+      border-radius: 0.5rem;
+      transition: all 0.2s;
+    }
+    
+    .chatbot-header-btn:hover {
+      background: var(--secondary);
+      color: var(--foreground);
+    }
+    
+    .chatbot-header-btn svg {
+      width: 1.25rem;
+      height: 1.25rem;
+    }
+    
+    .chatbot-welcome {
+      padding: 1.5rem;
+      text-align: center;
+      border-bottom: 1px solid var(--border);
+      background: linear-gradient(to bottom, rgba(34, 211, 238, 0.05), transparent);
+    }
+    
+    .chatbot-welcome p:first-child {
+      font-weight: 500;
+      margin-bottom: 0.25rem;
+    }
+    
+    .chatbot-welcome p:last-child {
+      font-size: 0.875rem;
+      color: var(--muted-foreground);
+    }
+    
+    .chatbot-search {
+      padding: 1rem;
+      border-bottom: 1px solid var(--border);
+    }
+    
+    .chatbot-search-input {
+      position: relative;
+    }
+    
+    .chatbot-search-input svg {
+      position: absolute;
+      left: 0.75rem;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 1rem;
+      height: 1rem;
+      color: var(--muted-foreground);
+    }
+    
+    .chatbot-search-input input {
+      width: 100%;
+      padding: 0.625rem 1rem 0.625rem 2.5rem;
+      background: rgba(28, 31, 40, 0.5);
+      border: 1px solid var(--border);
+      border-radius: 0.75rem;
+      font-size: 0.875rem;
+      color: var(--foreground);
+      outline: none;
+      transition: all 0.2s;
+    }
+    
+    .chatbot-search-input input::placeholder {
+      color: var(--muted-foreground);
+    }
+    
+    .chatbot-search-input input:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 2px rgba(34, 211, 238, 0.2);
+    }
+    
+    .chatbot-content {
+      display: flex;
+      flex-direction: column;
+      height: calc(100% - 200px);
+    }
+    
+    .chatbot-messages {
+      flex: 1;
+      overflow-y: auto;
+      padding: 1rem;
+      display: none;
+    }
+    
+    .chatbot-messages.active {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+    
+    .chat-message {
+      display: flex;
+      max-width: 80%;
+    }
+    
+    .chat-message.question {
+      margin-left: auto;
+    }
+    
+    .chat-message.answer {
+      margin-right: auto;
+    }
+    
+    .message-avatar {
+      width: 2rem;
+      height: 2rem;
+      margin-right: 0.5rem;
+      flex-shrink: 0;
+    }
+    
+    .message-avatar-inner {
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to bottom right, rgba(34, 211, 238, 0.2), rgba(34, 211, 238, 0.05));
+      border: 1px solid rgba(34, 211, 238, 0.2);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .mini-robot {
+      width: 1rem;
+      height: 1rem;
+      background: linear-gradient(to bottom right, var(--secondary), var(--card));
+      border: 1px solid rgba(34, 211, 238, 0.3);
+      border-radius: 0.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2px;
+    }
+    
+    .mini-robot-eye {
+      width: 4px;
+      height: 4px;
+      background: var(--primary);
+      border-radius: 50%;
+    }
+    
+    .message-bubble {
+      padding: 0.75rem 1rem;
+      border-radius: 1rem;
+    }
+    
+    .chat-message.question .message-bubble {
+      background: var(--primary);
+      color: var(--background);
+      border-bottom-right-radius: 0.25rem;
+    }
+    
+    .chat-message.answer .message-bubble {
+      background: rgba(28, 31, 40, 0.8);
+      border: 1px solid rgba(42, 45, 56, 0.5);
+      border-bottom-left-radius: 0.25rem;
+    }
+    
+    .message-text {
+      font-size: 0.875rem;
+      line-height: 1.6;
+    }
+    
+    .message-time {
+      font-size: 0.625rem;
+      margin-top: 0.375rem;
+      opacity: 0.7;
+    }
+    
+    .chat-message.answer .message-time {
+      color: var(--muted-foreground);
+    }
+    
+    .message-actions {
+      display: flex;
+      gap: 0.5rem;
+      margin-top: 0.75rem;
+    }
+    
+    .message-action-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.375rem;
+      padding: 0.375rem 0.75rem;
+      font-size: 0.75rem;
+      font-weight: 500;
+      border-radius: 0.5rem;
+      transition: all 0.2s;
+      text-decoration: none;
+    }
+    
+    .message-action-btn.primary {
+      background: rgba(34, 211, 238, 0.1);
+      color: var(--primary);
+    }
+    
+    .message-action-btn.primary:hover {
+      background: rgba(34, 211, 238, 0.2);
+    }
+    
+    .message-action-btn.whatsapp {
+      background: rgba(34, 197, 94, 0.1);
+      color: #22c55e;
+    }
+    
+    .message-action-btn.whatsapp:hover {
+      background: rgba(34, 197, 94, 0.2);
+    }
+    
+    .message-action-btn svg {
+      width: 0.75rem;
+      height: 0.75rem;
+    }
+    
+    /* Thinking Indicator */
+    .thinking-indicator {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 1rem;
+    }
+    
+    .thinking-bubbles {
+      position: absolute;
+      top: -0.75rem;
+      right: -0.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 0.25rem;
+    }
+    
+    .think-bubble {
+      background: rgba(34, 211, 238, 0.5);
+      border-radius: 50%;
+      animation: thinkBubble 1.5s ease-in-out infinite;
+    }
+    
+    .think-bubble:nth-child(1) { width: 0.5rem; height: 0.5rem; }
+    .think-bubble:nth-child(2) { width: 0.75rem; height: 0.75rem; animation-delay: 0.2s; }
+    .think-bubble:nth-child(3) { width: 1rem; height: 1rem; animation-delay: 0.4s; }
+    
+    .thinking-text span {
+      font-size: 0.875rem;
+      font-weight: 500;
+    }
+    
+    .thinking-dots {
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+      margin-top: 0.25rem;
+    }
+    
+    .thinking-dot {
+      width: 0.375rem;
+      height: 0.375rem;
+      background: var(--primary);
+      border-radius: 50%;
+      animation: pulse 0.8s ease-in-out infinite;
+    }
+    
+    .thinking-dot:nth-child(2) { animation-delay: 0.2s; }
+    .thinking-dot:nth-child(3) { animation-delay: 0.4s; }
+    
+    .thinking-label {
+      font-size: 0.75rem;
+      color: var(--muted-foreground);
+      margin-left: 0.25rem;
+    }
+    
+    /* Typing Indicator */
+    .typing-indicator {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 0.75rem 1rem;
+    }
+    
+    .typing-dots {
+      display: flex;
+      gap: 0.25rem;
+    }
+    
+    .typing-dot {
+      width: 0.5rem;
+      height: 0.5rem;
+      background: rgba(34, 211, 238, 0.6);
+      border-radius: 50%;
+      animation: bounce 1s ease-in-out infinite;
+    }
+    
+    .typing-dot:nth-child(2) { animation-delay: 0.15s; }
+    .typing-dot:nth-child(3) { animation-delay: 0.3s; }
+    
+    /* FAQ List */
+    .faq-list {
+      overflow-y: auto;
+      padding: 1rem;
+      flex: 1;
+    }
+    
+    .faq-list.compact {
+      max-height: 12rem;
+      border-top: 1px solid var(--border);
+    }
+    
+    .faq-label {
+      font-size: 0.75rem;
+      color: var(--muted-foreground);
+      font-weight: 500;
+      margin-bottom: 0.75rem;
+    }
+    
+    .faq-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    
+    .faq-btn {
+      width: 100%;
+      text-align: left;
+      padding: 0.75rem 1rem;
+      background: rgba(28, 31, 40, 0.3);
+      border: 1px solid rgba(42, 45, 56, 0.5);
+      border-radius: 0.75rem;
+      font-size: 0.875rem;
+      color: var(--foreground);
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    
+    .faq-btn:hover {
+      background: rgba(28, 31, 40, 0.6);
+      border-color: rgba(34, 211, 238, 0.3);
+      transform: translateX(4px);
+      color: var(--primary);
+    }
+    
+    .faq-empty {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.875rem;
+      color: var(--muted-foreground);
+    }
+    
+    /* Animations */
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.5; }
+    }
+    
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-25%); }
+    }
+    
+    @keyframes blink {
+      0%, 90%, 100% { transform: scaleY(1); }
+      95% { transform: scaleY(0.1); }
+    }
+    
+    @keyframes smile {
+      0%, 100% { width: 1rem; }
+      50% { width: 1.25rem; }
+    }
+    
+    @keyframes float {
+      0%, 100% { transform: translateY(0) scale(1); opacity: 0.6; }
+      50% { transform: translateY(-4px) scale(1.2); opacity: 1; }
+    }
+    
+    @keyframes thinkBubble {
+      0%, 100% { transform: scale(1); opacity: 0.4; }
+      50% { transform: scale(1.3); opacity: 1; }
+    }
+    
+    /* Scrollbar */
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+    
+    ::-webkit-scrollbar-track {
+      background: var(--secondary);
+    }
+    
+    ::-webkit-scrollbar-thumb {
+      background: var(--border);
+      border-radius: 3px;
+    }
+    
+    ::-webkit-scrollbar-thumb:hover {
+      background: var(--muted-foreground);
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="#" class="logo">Abshell<span>.</span></a>
+        
+        <nav class="nav-desktop">
+          <a href="#hizmetler" class="nav-link">Hizmetler</a>
+          <a href="#hakkimizda" class="nav-link">Hakkimizda</a>
+          <a href="#neden-biz" class="nav-link">Neden Biz</a>
+          <a href="#iletisim" class="nav-link">Iletisim</a>
+        </nav>
+        
+        <div class="header-actions">
+          <button class="btn btn-outline" onclick="openChatbot()">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="10" x="3" y="11" rx="2"/><circle cx="12" cy="5" r="2"/><path d="M12 7v4"/><line x1="8" x2="8" y1="16" y2="16"/><line x1="16" x2="16" y1="16" y2="16"/></svg>
+            Yardim Botu
+          </button>
+          <a href="#iletisim" class="btn btn-primary">Teklif Al</a>
+        </div>
+        
+        <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+          <svg id="menu-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+  
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <div class="mobile-menu-header">
+      <a href="#" class="logo">Abshell<span>.</span></a>
+      <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+      </button>
+    </div>
+    <nav>
+      <a href="#hizmetler" class="mobile-nav-link" onclick="toggleMobileMenu()">Hizmetler</a>
+      <a href="#hakkimizda" class="mobile-nav-link" onclick="toggleMobileMenu()">Hakkimizda</a>
+      <a href="#neden-biz" class="mobile-nav-link" onclick="toggleMobileMenu()">Neden Biz</a>
+      <a href="#iletisim" class="mobile-nav-link" onclick="toggleMobileMenu()">Iletisim</a>
+    </nav>
+    <div style="margin-top: 2rem;">
+      <a href="#iletisim" class="btn btn-primary" style="width: 100%;" onclick="toggleMobileMenu()">Teklif Al</a>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-orb hero-orb-1"></div>
+    <div class="hero-orb hero-orb-2"></div>
+    <div class="hero-grid"></div>
+    
+    <div class="hero-content">
+      <div class="badge">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/></svg>
+        Mersin'in Dijital Ajansi
+      </div>
+      
+      <h1>
+        <span class="gradient-text">Mersin Web Tasarim</span>
+        <br>ve <span class="gradient-text">SEO Hizmetleri</span>
+      </h1>
+      
+      <p class="hero-description">
+        <strong>Mersin web tasarim</strong> ve <strong>Mersin SEO</strong> alaninda uzman ekibimizle, 
+        markanizi dijitale tasiyor, Google'da ust siralara cikariyoruz. 
+        E-ticaret, kurumsal web sitesi ve dijital pazarlama cozumleri.
+      </p>
+      
+      <div class="hero-buttons">
+        <a href="#iletisim" class="btn btn-primary">
+          Ucretsiz SEO Analizi
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+        <a href="#hizmetler" class="btn btn-outline">Hizmetlerimizi Kesfet</a>
+      </div>
+      
+      <div class="trust-indicators">
+        <div class="trust-item">
+          <div class="trust-dot"></div>
+          <span>6000+ Proje Tamamlandi</span>
+        </div>
+        <div class="trust-item">
+          <div class="trust-dot"></div>
+          <span>10+ Yil Deneyim</span>
+        </div>
+        <div class="trust-item">
+          <div class="trust-dot"></div>
+          <span>%100 Musteri Memnuniyeti</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-value">6000+</div>
+          <div class="stat-label">Web Sitesi</div>
+          <div class="stat-description">basariyla teslim edildi</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value">%100</div>
+          <div class="stat-label">Memnuniyet</div>
+          <div class="stat-description">musteri orani</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value">10+</div>
+          <div class="stat-label">Yil Deneyim</div>
+          <div class="stat-description">Mersin'de hizmet</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value">1.</div>
+          <div class="stat-label">Sayfa</div>
+          <div class="stat-description">Google siralamasi</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="hizmetler" class="services">
+    <div class="services-bg"></div>
+    <div class="container" style="position: relative;">
+      <div class="services-header">
+        <div class="badge">Profesyonel Hizmetler</div>
+        <h2 class="section-title"><span class="gradient-text">Mersin Web Tasarim</span> ve SEO</h2>
+        <p>Mersin'de dijital varliginizi guclendirmek icin kapsamli cozumler sunuyoruz. Her proje, musterinin aktif katilimiyla ve titizlikle yurutulur.</p>
+      </div>
+      
+      <div class="services-grid">
+        <div class="service-card highlight">
+          <div class="service-badge">Populer</div>
+          <div class="service-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+          </div>
+          <h3>Mersin Web Tasarim</h3>
+          <p>Mersin'de ozgun, mobil uyumlu ve SSL sertifikali kurumsal web siteleri tasarliyoruz. SEO uyumlu altyapi ile Google'da ust siralara cikin.</p>
+        </div>
+        
+        <div class="service-card highlight">
+          <div class="service-badge">Populer</div>
+          <div class="service-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+          </div>
+          <h3>Mersin SEO Hizmetleri</h3>
+          <p>Mersin SEO uzmanlarimizla arama motorlarinda ust siralara cikin. Teknik SEO, icerik optimizasyonu ve yerel SEO ile organik trafiginizi artirin.</p>
+        </div>
+        
+        <div class="service-card">
+          <div class="service-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
+          </div>
+          <h3>E-Ticaret Cozumleri</h3>
+          <p>Mersin'de olceklenebilir, guvenli ve kullanici dostu sanal magazalar kuruyoruz. Odeme sistemleri entegrasyonu ve stok yonetimi dahil.</p>
+        </div>
+        
+        <div class="service-card">
+          <div class="service-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/><path d="M10 6h4"/><path d="M10 10h4"/><path d="M10 14h4"/><path d="M10 18h4"/></svg>
+          </div>
+          <h3>Emlak Yazilimi</h3>
+          <p>Gayrimenkul sektorune ozel web yazilimlari. Ilan yonetimi, musteri takibi, raporlama ve harita entegrasyonlari ile tam cozum.</p>
+        </div>
+        
+        <div class="service-card">
+          <div class="service-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg>
+          </div>
+          <h3>Fatura Sistemleri</h3>
+          <p>E-fatura ve e-arsiv entegrasyonlu, yasal mevzuata uygun fatura sistemleri. Muhasebe sureclerinizi dijitallestirin.</p>
+        </div>
+        
+        <div class="service-card">
+          <div class="service-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 11 18-5v12L3 14v-3z"/><path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"/></svg>
+          </div>
+          <h3>Dijital Pazarlama</h3>
+          <p>Google Ads, sosyal medya yonetimi ve icerik pazarlama ile Mersin'de ve tum Turkiye'de hedef kitlenize ulasin.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEO Detail Section -->
+  <section id="seo-detay" class="seo-detail">
+    <div class="seo-bg-gradient"></div>
+    <div class="seo-orb-left"></div>
+    <div class="seo-orb-right"></div>
+    
+    <div class="container">
+      <!-- Header -->
+      <div class="seo-header">
+        <span class="badge">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          Bolgesel SEO Uzmanligi
+        </span>
+        <h2 class="section-title">
+          Mersin SEO, Adana SEO ve Antalya SEO
+          <span class="gradient-text" style="display: block; margin-top: 0.5rem;">Yerel Gucten Ulusal Basariya</span>
+        </h2>
+        <p class="seo-intro">Dijital dunyada gorunur olmak artik bir tercih degil, zorunluluk. Ozellikle rekabetin hizla arttigi bolgelerde, dogru SEO stratejisi olmadan Google'da kalici basari elde etmek mumkun degil.</p>
+      </div>
+
+      <!-- Experience Banner -->
+      <div class="seo-experience-banner">
+        <div class="experience-glow"></div>
+        <p class="experience-label">2016'dan bugune</p>
+        <div class="experience-stats">
+          <span class="experience-number">6000+</span>
+          <span class="experience-text">Web Sitesi Deneyimi</span>
+        </div>
+        <p class="experience-desc">Kucuk isletmelerden kurumsal markalara, yerel firmalardan ulusal projelere kadar genis bir yelpazede edindigimiz deneyim, bugün bizi sadece "SEO yapan" degil, SEO stratejisi ureten bir noktaya tasidi.</p>
+      </div>
+
+      <!-- City Cards -->
+      <div class="seo-cities">
+        <!-- Mersin SEO -->
+        <div class="seo-city-card mersin">
+          <div class="city-grid">
+            <div class="city-info">
+              <div class="city-header">
+                <div class="city-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <div>
+                  <h3>Mersin SEO</h3>
+                  <p class="city-subtitle">Yerel Rekabette Ust Siralar Icin</p>
+                </div>
+              </div>
+              <p class="city-desc">Mersin, hizla buyuyen ticaret hacmi ve dijitallesen isletmeleriyle SEO acisindan oldukca rekabetci bir sehir. Mersin SEO calismalarinda yalnizca anahtar kelime eklemek yeterli degildir.</p>
+              <div class="city-highlight">
+                <p>"Bu sayede Mersin'de faaliyet gosteren firmalar, sadece siralama kazanmakla kalmaz; dogru musteriye, dogru zamanda ulasir."</p>
+              </div>
+            </div>
+            <div class="city-points">
+              <h4>Projelerimizde Oncelik:</h4>
+              <ul>
+                <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22,4 12,14.01 9,11.01"/></svg> Teknik SEO altyapisinin kusursuz kurulmasi</li>
+                <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22,4 12,14.01 9,11.01"/></svg> Sayfa hizinin ve mobil uyumlulugün iyilestirilmesi</li>
+                <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22,4 12,14.01 9,11.01"/></svg> Yerel arama sonuclari icin dogru icerik mimarisi</li>
+                <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22,4 12,14.01 9,11.01"/></svg> Google Haritalar ve bolgesel gorunurluk optimizasyonu</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Adana SEO -->
+        <div class="seo-city-card adana">
+          <div class="city-grid">
+            <div class="city-info">
+              <div class="city-header">
+                <div class="city-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+                </div>
+                <div>
+                  <h3>Adana SEO</h3>
+                  <p class="city-subtitle">Guclu Rekabet, Akilli Strateji</p>
+                </div>
+              </div>
+              <p class="city-desc">Adana, sanayi, hizmet ve e-ticaret alanlarinda yogun rekabetin yasandigi sehirlerden biridir. Adana SEO calismalarinda klasik yontemler cogu zaman yetersiz kalir.</p>
+              <div class="city-highlight">
+                <p>"SEO siteleri normalde 6 ayda belirgin sonuclar verirken, ozel SEO yaklasimimiz sayesinde 1-2 hafta icinde etki gosterdigimiz projeler bulunmaktadir."</p>
+              </div>
+            </div>
+            <div class="city-points">
+              <h4>Projelerimizde Oncelik:</h4>
+              <ul>
+                <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22,4 12,14.01 9,11.01"/></svg> Rakip analizleri detayli sekilde yapilir</li>
+                <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22,4 12,14.01 9,11.01"/></svg> Hedef anahtar kelimeler donusum potansiyeline gore secilir</li>
+                <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22,4 12,14.01 9,11.01"/></svg> Icerikler kullaniciyi sitede tutacak sekilde planlanir</li>
+                <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22,4 12,14.01 9,11.01"/></svg> Teknik ve icerik SEO es zamanli ilerletilir</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Antalya SEO -->
+        <div class="seo-city-card antalya">
+          <div class="city-grid">
+            <div class="city-info">
+              <div class="city-header">
+                <div class="city-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+                </div>
+                <div>
+                  <h3>Antalya SEO</h3>
+                  <p class="city-subtitle">Turizm ve Hizmet Sektorunde Gorunurluk</p>
+                </div>
+              </div>
+              <p class="city-desc">Antalya, ozellikle turizm, saglik ve hizmet sektorlerinde SEO'nun en kritik oldugu sehirlerden biridir. Antalya SEO calismalarinda cok dilli yapi ve mevsimsel aramalar dikkate alinmalidir.</p>
+              <div class="city-highlight">
+                <p>"Antalya'da SEO, yalnizca 'ust siraya cikmak' degil; dogru hedef kitleyle surdurulebilir bag kurmak anlamina gelir."</p>
+              </div>
+            </div>
+            <div class="city-points">
+              <h4>Projelerimizde Oncelik:</h4>
+              <ul>
+                <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22,4 12,14.01 9,11.01"/></svg> Sektore ozel anahtar kelime kumeleri olusturulur</li>
+                <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22,4 12,14.01 9,11.01"/></svg> Icerikler hem kullanici hem arama motoru odakli yazilir</li>
+                <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22,4 12,14.01 9,11.01"/></svg> Sayfa deneyimi ve donusum orani on planda tutulur</li>
+                <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22,4 12,14.01 9,11.01"/></svg> Uzun vadeli marka gorunurlugu hedeflenir</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Why Different -->
+      <div class="seo-why-different">
+        <h3>Neden Farkliyiz?</h3>
+        <p class="why-intro">Bizim icin SEO:</p>
+        <div class="why-grid">
+          <div class="why-item">
+            <div class="why-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            </div>
+            <p>Sadece anahtar kelime yerlestirmek degildir</p>
+          </div>
+          <div class="why-item">
+            <div class="why-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <p>Sadece backlink almak degildir</p>
+          </div>
+          <div class="why-item">
+            <div class="why-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+            </div>
+            <p>Sadece rapor sunmak degildir</p>
+          </div>
+          <div class="why-item">
+            <div class="why-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+            </div>
+            <p>Teknik altyapi, icerik mimarisi ve stratejik planlamanin birlesimidir</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Technology Note -->
+      <div class="seo-tech-note">
+        <p class="tech-main">SEO; teknik altyapi, icerik mimarisi, kullanici deneyimi ve stratejik planlamanin birlesimidir.</p>
+        <p class="tech-sub">Tasarimlarimiz ve SEO altyapimiz ozel teknoloji <span class="tech-highlight">(SPN yaklasimi)</span> ile performans odakli kurulur. Hiz, guvenlik ve olceklenebilirlik her projede temel onceligimizdir.</p>
+      </div>
+
+      <!-- CTA -->
+      <div class="seo-cta">
+        <p>Eger Mersin'de, Adana'da veya Antalya'da faaliyet gosteriyorsaniz; SEO calismanizin gercekten sonuc uretmesini istiyorsaniz, dogru yerdesiniz.</p>
+        <p class="cta-highlight">Kisa vadeli degil, kalici ve olculebilir basari hedefleyen bir SEO anlayisiyla ilerliyoruz.</p>
+        <a href="#iletisim" class="btn btn-primary">Ucretsiz SEO Analizi Isteyin</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="hakkimizda" class="about">
+    <div class="about-bg"></div>
+    <div class="about-orb"></div>
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-content">
+          <div class="badge">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            Mersin'de Hizmetinizdeyiz
+          </div>
+          <h2 class="section-title"><span class="gradient-text">Mersin'in Dijital</span> Partneri</h2>
+          <p>Abshell Yazilim olarak, <strong>Mersin web tasarim</strong> ve <strong>Mersin SEO</strong> alaninda firmalarin dijital varliklarini guclendirmek icin profesyonel cozumler sunuyoruz. Bir web sitesinin sadece gorsel bir vitrin olmadigini, ayni zamanda satislari artiran ve marka degeri katan bir arac oldugunu biliyoruz.</p>
+          <p>Mersin ve cevre illerde hizmet veren ekibimiz, yerel SEO konusunda uzmanlasmis olup isletmenizin Google'da ust siralara cikmasini sagliyoruz.</p>
+          
+          <div class="features-list">
+            <div class="feature-item">
+              <div class="feature-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              </div>
+              <span>Mersin'de yerel SEO uzmanligi</span>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              </div>
+              <span>Mobil uyumlu (responsive) siteler</span>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              </div>
+              <span>SSL sertifikasi ile guvenlik</span>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              </div>
+              <span>Google'da ust sira garantisi</span>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              </div>
+              <span>Hizli yukleme sureleri</span>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              </div>
+              <span>7/24 teknik destek</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="about-stats">
+          <div class="about-stats-orb"></div>
+          <div style="position: relative;">
+            <div class="about-stats-main">10+</div>
+            <div class="about-stats-label">Yillik Deneyim</div>
+            <p class="about-stats-description">Mersin basta olmak uzere Adana, Antalya, Hatay ve tum Turkiye genelinde web tasarim ve SEO hizmetleri sunuyoruz.</p>
+            <div class="about-stats-grid">
+              <div class="about-stat-card">
+                <div class="value">6000+</div>
+                <div class="label">Basarili Proje</div>
+              </div>
+              <div class="about-stat-card">
+                <div class="value">%100</div>
+                <div class="label">Memnuniyet</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Us Section -->
+  <section id="neden-biz" class="why-us">
+    <div class="why-us-bg"></div>
+    <div class="why-us-orb"></div>
+    <div class="container" style="position: relative;">
+      <div class="why-us-header">
+        <div class="badge">Neden Abshell?</div>
+        <h2 class="section-title"><span class="gradient-text">Mersin'de Farkimizi</span> Kesfedin</h2>
+        <p>Mersin web tasarim ve SEO alaninda dijital pazarda rekabet avantaji elde etmeniz, satis potansiyelinizi yukseltmeniz ve marka imajinizi guclendirmeniz icin yaninizdayiz.</p>
+      </div>
+      
+      <div class="why-us-grid">
+        <div class="reason-card">
+          <div class="reason-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+          </div>
+          <h3>Yerel SEO Uzmanligi</h3>
+          <p>Mersin ve cevre illerde yerel SEO konusunda uzmanlasmis ekibimizle Google'da ust siralara cikin. Yerel aramalarda gorunurlugunuzu artirin.</p>
+        </div>
+        
+        <div class="reason-card">
+          <div class="reason-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          </div>
+          <h3>Hizli Teslimat</h3>
+          <p>Projelerinizi belirlenen surede, kaliteden odun vermeden teslim ediyoruz. Planli ve sistematik calisma anlayisimizla zamaniniza saygi duyuyoruz.</p>
+        </div>
+        
+        <div class="reason-card">
+          <div class="reason-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3>Guvenlik Odakli</h3>
+          <p>SSL sertifikasi, guvenli odeme sistemleri ve veri koruma protokolleri ile sitenizin ve musterilerinizin guvenligini sagliyoruz.</p>
+        </div>
+        
+        <div class="reason-card">
+          <div class="reason-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3>Musteri Odakli</h3>
+          <p>Her projeyi musterinin aktif katilimiyla yurutuyoruz. Ihtiyaclarinizi dinliyor, hedeflerinizi anliyor ve en uygun cozumu sunuyoruz.</p>
+        </div>
+        
+        <div class="reason-card">
+          <div class="reason-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
+          </div>
+          <h3>Sonuc Odakli</h3>
+          <p>Sadece guzel gorunen degil, ayni zamanda satis yapan, musteri ceken ve marka degeri katan web siteleri olusturuyoruz.</p>
+        </div>
+        
+        <div class="reason-card">
+          <div class="reason-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
+          </div>
+          <h3>Kanitlanmis Basari</h3>
+          <p>6000+ tamamlanmis proje ve %98 musteri memnuniyeti ile Mersin'in en guvenilir dijital ajansiyiz.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="iletisim" class="contact">
+    <div class="contact-bg"></div>
+    <div class="contact-orb"></div>
+    <div class="container" style="position: relative;">
+      <div class="contact-header">
+        <div class="badge">Bizimle Iletisime Gecin</div>
+        <h2 class="section-title"><span class="gradient-text">Mersin Web Tasarim</span> Teklifi Alin</h2>
+        <p><strong>Mersin web tasarim</strong> ve <strong>Mersin SEO</strong> projeniz icin ucretsiz analiz ve teklif alin. Dijital donusum yolculugunuzda size yardimci olmaktan mutluluk duyariz.</p>
+      </div>
+      
+      <div class="contact-grid">
+        <div class="contact-card">
+          <div class="contact-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <h3>Adres</h3>
+          <p>Adres: Muratbey Apartmanı, Menderes, Bakanlık Cd. Kat1, No 22, 33200 Mezitli/Mersin , Turkiye</p>
+          <p class="subtext">Mersin, Adana, Antalya, Hatay ve tüm Turkiye</p>
+        </div>
+        
+        <div class="contact-card">
+          <div class="contact-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </div>
+          <h3>Telefon</h3>
+          <a href="tel:+90 324 999 84 80">+90 324 999 84 80</a>
+          <p class="subtext">Hafta ici 09:00 - 18:00</p>
+        </div>
+        
+        <div class="contact-card">
+          <div class="contact-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          </div>
+          <h3>E-posta</h3>
+          <a href="mailto:info@abshellyazilim.com">info@abshellyazilim.com</a>
+          <p class="subtext">7/24 e-posta destegi</p>
+        </div>
+      </div>
+      
+      <div class="whatsapp-cta">
+        <div class="whatsapp-card">
+          <div class="whatsapp-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+          </div>
+          <div class="whatsapp-content">
+            <h3>Hizli Iletisim</h3>
+            <p>WhatsApp uzerinden aninda yanit alin</p>
+          </div>
+          <a href="https://wa.me/905011668070" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">WhatsApp ile Yazin</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Divider Line -->
+  <div style="width: 100%; height: 1px; background: linear-gradient(to right, transparent, #2a3a5c, transparent);"></div>
+  
+  <!-- Footer -->
+  <footer class="footer-new" id="footer-section">
+    <!-- Subtle noise texture overlay -->
+    <div class="footer-noise"></div>
+    
+    <div class="container" style="position: relative;">
+      <!-- Main 3-Column Grid -->
+      <div class="footer-new-grid">
+        <!-- Left Column - Brand -->
+        <div class="footer-new-col">
+          <h3 class="footer-brand-title">absheLL Yazılım</h3>
+          <p class="footer-text">absheLL Yazılım, DigiWorksTeam Yazılım Hizmetleri bünyesinde faaliyet göstermektedir.</p>
+        </div>
+        
+        <!-- Middle Column - Legal & Technology -->
+        <div class="footer-new-col">
+          <p class="footer-text">Bu platformda kullanılan tüm yazılım altyapısı, tasarım dili, otomasyon sistemleri ve özel SEO teknolojileri DigiWorksTeam'e aittir. Yetkisiz kopyalanamaz, çoğaltılamaz veya izinsiz kullanılamaz.</p>
+        </div>
+        
+        <!-- Right Column - Registration -->
+        <div class="footer-new-col">
+          <div>
+            <span class="footer-label">Register No</span>
+            <p class="footer-register">5D4898-00124-2200102</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Mini Trust Badge -->
+      <div class="footer-trust-badge">
+        <p class="trust-title">DigiWorksTeam Güvencesiyle Geliştirilmiştir</p>
+        <p class="trust-subtitle">Korumalı Altyapı · Yetkili Yazılım · Özel SEO Teknolojisi</p>
+        <p class="trust-register">Register No : 5D4898-00124-2200102</p>
+      </div>
+      
+      <!-- SEO Trust Statement -->
+      <div class="footer-seo-statement">
+        <p>Bu web sitesi, arama motoru kalite yönergelerine uygun olarak geliştirilmiş; kullanıcı deneyimi, sayfa hızı, güvenlik ve içerik bütünlüğü esas alınarak optimize edilmiştir.</p>
+      </div>
+      
+      <!-- Special Infrastructure Note -->
+      <div class="footer-infra-note">
+        <p>Bu site özel altyapı kullanır.</p>
+      </div>
+      
+      <!-- Hover-Expand Legal Text -->
+      <div class="footer-legal-expand">
+        <div class="legal-trigger" onclick="toggleLegalText()">
+          <span>Yasal Bilgilendirme</span>
+          <span class="legal-arrow" id="legal-arrow">▼</span>
+        </div>
+        <div class="legal-content" id="legal-content">
+          <p>Bu sitede yer alan tüm yazılım bileşenleri, arayüz tasarımları, otomasyon yapıları ve SEO sistemleri DigiWorksTeam'e aittir. Tersine mühendislik, kopyalama, izinsiz çoğaltma ve farklı platformlarda kullanımı hukuka aykırıdır. İhlaller tespit edildiğinde yasal süreç başlatılır.</p>
+        </div>
+      </div>
+      
+      <!-- Bottom Line -->
+      <div class="footer-bottom-line">
+        <p class="copyright">© Tüm hakları ve teknolojisi saklıdır.</p>
+        <p class="tagline">Performans, güvenlik ve sürdürülebilirlik odaklı geliştirilmiştir.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Chatbot Button -->
+  <button class="chatbot-btn" id="chatbot-btn" onclick="openChatbot()">
+    <div class="robot-avatar">
+      <div class="robot-glow"></div>
+      <div class="robot-head">
+        <div class="robot-antenna">
+          <div class="antenna-ball"></div>
+          <div class="antenna-stick"></div>
+        </div>
+        <div class="robot-face">
+          <div class="robot-eyes">
+            <div class="robot-eye"></div>
+            <div class="robot-eye"></div>
+          </div>
+          <div class="robot-mouth"></div>
+        </div>
+        <div class="robot-side-light left"></div>
+        <div class="robot-side-light right"></div>
+      </div>
+      <div class="robot-particles">
+        <div class="robot-particle"></div>
+        <div class="robot-particle"></div>
+        <div class="robot-particle"></div>
+      </div>
+    </div>
+    <span>Yardim Botu</span>
+    <div class="online-dot"></div>
+  </button>
+
+  <!-- Chatbot Overlay -->
+  <div class="chatbot-overlay" id="chatbot-overlay" onclick="closeChatbot()"></div>
+
+  <!-- Chatbot Panel -->
+  <div class="chatbot-panel" id="chatbot-panel" onclick="event.stopPropagation()">
+    <div class="chatbot-header">
+      <div class="chatbot-header-info">
+        <div class="robot-avatar large" id="header-robot">
+          <div class="robot-glow"></div>
+          <div class="robot-head">
+            <div class="robot-antenna">
+              <div class="antenna-ball"></div>
+              <div class="antenna-stick"></div>
+            </div>
+            <div class="robot-face">
+              <div class="robot-eyes">
+                <div class="robot-eye"></div>
+                <div class="robot-eye"></div>
+              </div>
+              <div class="robot-mouth"></div>
+            </div>
+            <div class="robot-side-light left"></div>
+            <div class="robot-side-light right"></div>
+          </div>
+        </div>
+        <div>
+          <h3>DWT AbsheLL</h3>
+          <p class="chatbot-status">
+            <span class="dot"></span>
+            <span id="chatbot-status-text">Cevrimici</span>
+          </p>
+        </div>
+      </div>
+      <div class="chatbot-header-actions">
+        <button class="chatbot-header-btn" onclick="resetChat()" title="Yeni sohbet">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/><path d="M3 12a9 9 0 0 0 9 9 9.75 9.75 0 0 0 6.74-2.74L21 16"/><path d="M16 16h5v5"/></svg>
+        </button>
+        <button class="chatbot-header-btn" onclick="closeChatbot()" title="Kapat">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+        </button>
+      </div>
+    </div>
+    
+    <div class="chatbot-welcome" id="chatbot-welcome">
+      <p>Merhaba!</p>
+      <p>Size nasil yardimci olabilirim? Asagidaki sorulardan birini secin veya arama yapin.</p>
+    </div>
+    
+    <div class="chatbot-search">
+      <div class="chatbot-search-input">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+        <input type="text" placeholder="Sorunu yaz..." id="search-input" oninput="filterFaqs()">
+      </div>
+    </div>
+    
+    <div class="chatbot-content">
+      <div class="chatbot-messages" id="chatbot-messages"></div>
+      <div class="faq-list" id="faq-list">
+        <p class="faq-label" id="faq-label">Sik sorulan sorular:</p>
+        <div class="faq-buttons" id="faq-buttons"></div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // FAQ Data
+    const faqData = [
+      { id: 1, question: "Hangi hizmetleri veriyorsunuz?", answer: "SEO, web tasarim ve yazilim hizmetleri sagliyoruz ve bu konuda cok iyiyiz. Ihtiyacina gore kurumsal site, e-ticaret, landing page ve ozel yazilim gelistiriyoruz.", tags: ["hizmet", "seo", "web tasarim", "yazilim"] },
+      { id: 2, question: "SEO sureci ne kadar surer?", answer: "Klasik SEO'da sonuclar cogu zaman 3-6 ayi bulur. Bizim ozel SEO yaklasimimiz ile 1-2 hafta icinde etki gosterdigimiz projeler oluyor. (Sektor, rekabet ve site altyapisina gore degisir.)", tags: ["seo", "sure", "zaman"] },
+      { id: 3, question: "1-2 haftada nasil etki ediyorsunuz?", answer: "Hizli etki icin teknik SEO + icerik mimarisi + sayfa hizi + hedefli anahtar kelime kumeleriyle basliyoruz. Once gorunurlugu acip sonra kaliciligi guclendiriyoruz.", tags: ["seo", "hizli", "teknik"] },
+      { id: 4, question: "Web tasarimda ne yapiyorsunuz?", answer: "Mobil uyumlu, hizli acilan, SEO uyumlu ve donusum odakli web tasarimlar uretiyoruz. Tasarimlarimiz son teknoloji altyapi kullanir (SPN teknoloji) ve performans odaklidir.", tags: ["web tasarim", "mobil", "performans"] },
+      { id: 5, question: "Ozel yazilim gelistiriyor musunuz?", answer: "Evet. Panel, otomasyon, CRM benzeri sistemler, ozel API entegrasyonlari, uyelik sistemleri ve yonetim panelleri gelistiriyoruz.", tags: ["yazilim", "ozel", "api", "crm"] },
+      { id: 6, question: "E-ticaret sitesi kuruyor musunuz?", answer: "Evet. Urun yonetimi, odeme altyapisi, kargo entegrasyonu, kampanya modulleri ve SEO altyapisi dahil uctan uca e-ticaret kuruyoruz.", tags: ["e-ticaret", "satis", "odeme"] },
+      { id: 7, question: "Google'da ust siralara cikmak icin ne gerekiyor?", answer: "Teknik altyapi + dogru icerik + dogru hedefleme + kullanici deneyimi sart. Biz bunu olcumlu sekilde kurup duzenli iyilestiriyoruz.", tags: ["google", "siralama", "seo"] },
+      { id: 8, question: "Site hizini artiriyor musunuz?", answer: "Evet. Gorsel optimizasyon, kod bolme, onbellek, CDN, sunucu ayarlari ve Core Web Vitals odakli hizlandirma yapiyoruz.", tags: ["hiz", "performans", "optimizasyon"] },
+      { id: 9, question: "Icerikleri siz mi yaziyorsunuz?", answer: "Istersen biz yaziyoruz: SEO uyumlu sayfa icerikleri, blog plani, kategori/urun metinleri. Istersen mevcut iceriklerini de optimize ediyoruz.", tags: ["icerik", "blog", "yazi"] },
+      { id: 10, question: "Yerel SEO yapiyor musunuz?", answer: "Evet. Google Business Profile optimizasyonu, harita siralamasi, yerel anahtar kelime sayfalari ve yorum stratejisi ile ilerliyoruz.", tags: ["yerel", "seo", "google maps", "harita"] },
+      { id: 11, question: "Backlink hizmetiniz var mi?", answer: "Evet; ancak kalite odakli ilerliyoruz. Sektore uygun, dogal gorunumlu ve risk yonetimli bir strateji kuruyoruz.", tags: ["backlink", "seo", "link"] },
+      { id: 12, question: "Tasarimlariniz neden farkli?", answer: "Cunku sadece 'guzel' degil; hizli, olculebilir ve donusum odakli tasarliyoruz. SPN teknoloji altyapisi + modern UI + SEO mimarisi birlikte geliyor.", tags: ["tasarim", "fark", "kalite"] },
+      { id: 13, question: "Fiyatlar nasil belirleniyor?", answer: "Proje kapsamina gore netlesiyor: sayfa sayisi, ozel moduller, icerik ihtiyaci, SEO rekabet seviyesi. Istersen 2 dakikada teklif cikaralim.", tags: ["fiyat", "ucret", "maliyet", "teklif"] },
+      { id: 14, question: "Ne kadar surede teslim ediyorsunuz?", answer: "Landing page: 3-7 gun / Kurumsal site: 1-3 hafta / E-ticaret: 2-6 hafta. Kapsama gore net tarih veriyoruz.", tags: ["sure", "teslim", "zaman"] },
+      { id: 15, question: "Bakim ve destek veriyor musunuz?", answer: "Evet. Guncelleme, guvenlik, hiz, icerik destegi ve SEO takibiyle devam ediyoruz.", tags: ["bakim", "destek", "guncelleme"] },
+      { id: 16, question: "Guvenlik tarafinda neler yapiyorsunuz?", answer: "SSL, WAF/koruma, yetkilendirme, yedekleme, guncelleme politikasi ve temel sizma risk kontrolleri sagliyoruz.", tags: ["guvenlik", "ssl", "koruma"] },
+      { id: 17, question: "Hangi teknolojileri kullaniyorsunuz?", answer: "Proje tipine gore modern web teknolojileri ve olceklenebilir mimariler kullaniyoruz. Hiz ve SEO uyumu oncelik.", tags: ["teknoloji", "altyapi", "modern"] },
+      { id: 18, question: "Teklif almak istiyorum, neye ihtiyaciniz var?", answer: "Hedefin (SEO mu satis mi marka mi), sektorun, ornek begendigin site ve varsa mevcut domainin yeterli. Istersen simdi 'Teklif Al'a tikla.", tags: ["teklif", "basvuru", "iletisim"] }
+    ];
+
+    let messages = [];
+    let askedQuestionIds = new Set();
+    let isThinking = false;
+    let isTyping = false;
+
+    // Mobile Menu
+    function toggleMobileMenu() {
+      document.getElementById('mobile-menu').classList.toggle('active');
+    }
+
+    // Legal Text Toggle
+    function toggleLegalText() {
+      const content = document.getElementById('legal-content');
+      const arrow = document.getElementById('legal-arrow');
+      content.classList.toggle('expanded');
+      arrow.classList.toggle('expanded');
+    }
+
+    // Chatbot Functions
+    function openChatbot() {
+      document.getElementById('chatbot-btn').classList.add('hidden');
+      document.getElementById('chatbot-overlay').classList.add('active');
+      document.getElementById('chatbot-panel').classList.add('active');
+    }
+
+    function closeChatbot() {
+      document.getElementById('chatbot-btn').classList.remove('hidden');
+      document.getElementById('chatbot-overlay').classList.remove('active');
+      document.getElementById('chatbot-panel').classList.remove('active');
+    }
+
+    function resetChat() {
+      messages = [];
+      askedQuestionIds.clear();
+      isThinking = false;
+      isTyping = false;
+      document.getElementById('search-input').value = '';
+      document.getElementById('chatbot-welcome').style.display = 'block';
+      document.getElementById('chatbot-messages').classList.remove('active');
+      document.getElementById('chatbot-messages').innerHTML = '';
+      document.getElementById('faq-list').classList.remove('compact');
+      document.getElementById('faq-label').textContent = 'Sik sorulan sorular:';
+      document.getElementById('chatbot-status-text').textContent = 'Cevrimici';
+      renderFaqs();
+    }
+
+    function formatTime(date) {
+      return date.toLocaleTimeString('tr-TR', { hour: '2-digit', minute: '2-digit' });
+    }
+
+    function filterFaqs() {
+      renderFaqs();
+    }
+
+    function renderFaqs() {
+      const searchQuery = document.getElementById('search-input').value.toLowerCase();
+      const faqButtons = document.getElementById('faq-buttons');
+      
+      const filtered = faqData.filter(faq => {
+        if (askedQuestionIds.has(faq.id)) return false;
+        return faq.question.toLowerCase().includes(searchQuery) || 
+               faq.tags.some(tag => tag.toLowerCase().includes(searchQuery));
+      });
+
+      if (filtered.length === 0) {
+        faqButtons.innerHTML = '<p class="faq-empty">Sonuc bulunamadi. Farkli bir arama deneyin.</p>';
+      } else {
+        faqButtons.innerHTML = filtered.map(faq => 
+          `<button class="faq-btn" onclick="handleQuestionClick(${faq.id})">${faq.question}</button>`
+        ).join('');
+      }
+    }
+
+    async function handleQuestionClick(faqId) {
+      const faq = faqData.find(f => f.id === faqId);
+      if (!faq) return;
+
+      askedQuestionIds.add(faqId);
+
+      // Add question message
+      const questionMsg = {
+        id: Date.now(),
+        type: 'question',
+        content: faq.question,
+        timestamp: new Date()
+      };
+      messages.push(questionMsg);
+
+      // Update UI
+      document.getElementById('chatbot-welcome').style.display = 'none';
+      document.getElementById('chatbot-messages').classList.add('active');
+      document.getElementById('faq-list').classList.add('compact');
+      document.getElementById('faq-label').textContent = 'Baska bir soru sec:';
+
+      renderMessages();
+      renderFaqs();
+
+      // Show thinking
+      isThinking = true;
+      document.getElementById('chatbot-status-text').textContent = 'Dusunuyor...';
+      showThinking();
+
+      await new Promise(resolve => setTimeout(resolve, 1200 + Math.random() * 600));
+
+      // Show typing
+      isThinking = false;
+      isTyping = true;
+      document.getElementById('chatbot-status-text').textContent = 'Yaziyor...';
+      hideThinking();
+      showTyping();
+
+      await new Promise(resolve => setTimeout(resolve, 600 + Math.random() * 400));
+
+      // Add answer
+      isTyping = false;
+      document.getElementById('chatbot-status-text').textContent = 'Cevrimici';
+      hideTyping();
+
+      const answerMsg = {
+        id: Date.now() + 1,
+        type: 'answer',
+        content: faq.answer,
+        timestamp: new Date()
+      };
+      messages.push(answerMsg);
+      renderMessages();
+    }
+
+    function showThinking() {
+      const messagesContainer = document.getElementById('chatbot-messages');
+      const thinkingHtml = `
+        <div class="chat-message answer" id="thinking-indicator">
+          <div class="message-avatar">
+            <div class="message-avatar-inner">
+              <div class="mini-robot">
+                <div class="mini-robot-eye"></div>
+                <div class="mini-robot-eye"></div>
+              </div>
+            </div>
+          </div>
+          <div class="message-bubble" style="background: rgba(28, 31, 40, 0.8); border: 1px solid rgba(42, 45, 56, 0.5);">
+            <div class="thinking-indicator">
+              <div style="position: relative;">
+                <div class="robot-avatar" style="width: 3rem; height: 3rem;">
+                  <div class="robot-glow"></div>
+                  <div class="robot-head">
+                    <div class="robot-face">
+                      <div class="robot-eyes">
+                        <div class="robot-eye" style="animation: pulse 0.5s ease-in-out infinite;"></div>
+                        <div class="robot-eye" style="animation: pulse 0.5s ease-in-out infinite;"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="thinking-bubbles">
+                  <div class="think-bubble"></div>
+                  <div class="think-bubble"></div>
+                  <div class="think-bubble"></div>
+                </div>
+              </div>
+              <div class="thinking-text">
+                <span>Dusunuyorum...</span>
+                <div class="thinking-dots">
+                  <div class="thinking-dot"></div>
+                  <div class="thinking-dot"></div>
+                  <div class="thinking-dot"></div>
+                  <span class="thinking-label">Analiz ediliyor</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      `;
+      messagesContainer.insertAdjacentHTML('beforeend', thinkingHtml);
+      messagesContainer.scrollTop = messagesContainer.scrollHeight;
+    }
+
+    function hideThinking() {
+      const el = document.getElementById('thinking-indicator');
+      if (el) el.remove();
+    }
+
+    function showTyping() {
+      const messagesContainer = document.getElementById('chatbot-messages');
+      const typingHtml = `
+        <div class="chat-message answer" id="typing-indicator">
+          <div class="message-avatar">
+            <div class="message-avatar-inner">
+              <div class="mini-robot">
+                <div class="mini-robot-eye"></div>
+                <div class="mini-robot-eye"></div>
+              </div>
+            </div>
+          </div>
+          <div class="message-bubble" style="background: rgba(28, 31, 40, 0.8); border: 1px solid rgba(42, 45, 56, 0.5);">
+            <div class="typing-indicator">
+              <div class="robot-avatar" style="width: 3rem; height: 3rem;">
+                <div class="robot-glow"></div>
+                <div class="robot-head">
+                  <div class="robot-face">
+                    <div class="robot-eyes">
+                      <div class="robot-eye" style="animation: pulse 0.5s ease-in-out infinite;"></div>
+                      <div class="robot-eye" style="animation: pulse 0.5s ease-in-out infinite;"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="typing-dots">
+                <div class="typing-dot"></div>
+                <div class="typing-dot"></div>
+                <div class="typing-dot"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      `;
+      messagesContainer.insertAdjacentHTML('beforeend', typingHtml);
+      messagesContainer.scrollTop = messagesContainer.scrollHeight;
+    }
+
+    function hideTyping() {
+      const el = document.getElementById('typing-indicator');
+      if (el) el.remove();
+    }
+
+    function renderMessages() {
+      const messagesContainer = document.getElementById('chatbot-messages');
+      messagesContainer.innerHTML = messages.map(msg => {
+        if (msg.type === 'question') {
+          return `
+            <div class="chat-message question">
+              <div class="message-bubble">
+                <p class="message-text">${msg.content}</p>
+                <p class="message-time">${formatTime(msg.timestamp)}</p>
+              </div>
+            </div>
+          `;
+        } else {
+          return `
+            <div class="chat-message answer">
+              <div class="message-avatar">
+                <div class="message-avatar-inner">
+                  <div class="mini-robot">
+                    <div class="mini-robot-eye"></div>
+                    <div class="mini-robot-eye"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="message-bubble">
+                <p class="message-text">${msg.content}</p>
+                <p class="message-time">${formatTime(msg.timestamp)}</p>
+                <div class="message-actions">
+                  <a href="#iletisim" class="message-action-btn primary" onclick="closeChatbot()">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" x2="11" y1="2" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                    Teklif Al
+                  </a>
+                  <a href="https://wa.me/905011668070" target="_blank" rel="noopener noreferrer" class="message-action-btn whatsapp">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+                    WhatsApp
+                  </a>
+                </div>
+              </div>
+            </div>
+          `;
+        }
+      }).join('');
+      messagesContainer.scrollTop = messagesContainer.scrollHeight;
+    }
+
+    // Initialize FAQs on load
+    document.addEventListener('DOMContentLoaded', function() {
+      renderFaqs();
+    });
+  </script>
+</body>
+</html>
